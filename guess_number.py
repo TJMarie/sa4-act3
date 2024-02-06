@@ -10,6 +10,10 @@ while guess != 'q' and num_guesses > 0:
         break
     else:
         print(f"You have {num_guesses} guesses left.")
+        if int(guess) < number:
+            print("Too low!")
+        else:
+            print("Too high!")
         guess = input("Try again: ")
         num_guesses -= 1
 
